@@ -1,6 +1,92 @@
-venv/
-backend/venv/
+# =========================
+# Python
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.pyc.*
+
+# =========================
+# Virtual Environment
+# =========================
+backend/venv/
+venv/
+env/
+.venv/
+
+# =========================
+# Python build files
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Database files
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Uploaded Images
+# =========================
+backend/static/uploads/*
+backend/static/watermarked/*
+backend/static/suspicious/*
+
+# Keep folder structure but ignore files
+!backend/static/uploads/.gitkeep
+!backend/static/watermarked/.gitkeep
+!backend/static/suspicious/.gitkeep
+
+# =========================
+# User Signatures (optional)
+# =========================
+backend/static/signatures/*
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment variables
+# =========================
 .env
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing images
+# =========================
+test.jpg
+watermarked.jpg
+
+# =========================
+# Cache
+# =========================
+.cache/
+pytest_cache/
+
+# =========================
+# Node (frontend)
+# =========================
 node_modules/
+build/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
